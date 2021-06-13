@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">THINK &amp; GET COIN</string>
+    <string name="player1">PLAYER 1</string>
+    <string name="player2">PLAYER 2</string>
+    <string name="players_coin">COINS</string>
+    <string name="coin">COIN</string>
+    <string name="coin1">10</string>
+    <string name="coin2">10</string>
+    <string name="img">image</string>
+    <string name="resultTextBox">resultTextBox</string>
+    <string name="result">0</string>
+    <string name="resultText">TOTAL</string>
+    <string name="coinChoice1">1</string>
+    <string name="coinChoice2">2</string>
+    <string name="coinChoice3">3</string>
+    <string name="coinChoice4">4</string>
+    <string name="coinChoice5">5</string>
+    <string name="showResult">SHOW TOTAL</string>
+    <string name="etTotal1">10</string>
+    <string name="etTotal2">10</string>
+    <string name="totalText">TOTAL HERE</string>
+    <string name="totalNumber">0</string>
+    <string name="hideAnswer">HIDE</string>
+    <string name="Player1CatchCoin">0</string>
+    <string name="Player2CatchCoin">0</string>
+    <string name="p1GrayLight"></string>
+    <string name="p1GreenLight"></string>
+    <string name="p2GrayLight"></string>
+    <string name="p2GreenLight"></string>
+    <string name="questionMarkPng">questionMarkPng</string>
+    <string name="p_vs_p">PLAYER VS PLAYER</string>
+    <string name="p_vs_c">PLAYER VS COMPUTER</string>
+    <string name="online">ONLINE</string>
+    <string name="help">HELP</string>
+    <string name="next">CONTINUE</string>
+    <string name="help_icon"></string>
+    <string name="setting_icon"></string>
+    <string name="modeChange">Mode Change</string>
+    <string name="kara"></string>
+    <string name="winNameKara">PLAYER</string>
+    <string name="con">CONGRATULATIONS</string>
+    <string name="win">WINNER</string>
+    <string name="pop">HOME</string>
+    <string name="help_text">相手のコインを取得するゲーム。\n\n
+        1. プレイヤーが順番でそれぞれコインを出します。1ー５まで選択します。\n\n
+        2. トータルの所で自分のコインと相手のコインの和を予想して入力します。\n\n
+        3. 入力後でHIDE GO押して自分の出したコインとTOTALの値を隠します。\n\n
+        4. RESULTはSHOW RESULT を押したら真ん中のRESULT の上にある0 に和が出ます。和が当たっている方に相手の出したコインをもらいます、当たってない方から出したコインを引きます。\n\n
+        5. 相手のコインを全部取得したら勝ちます。</string>
+    <string name="reset">RESET GAME</string>
+    <string name="ok">OK</string>
+    <string name="player_2">PLAYER 2</string>
+    <string name="player_1">PLAYER 1</string>
+    <string name="change_name">CHANGE PLAYERS NAME</string>
+<!--    <string name="p1">PLAYER1</string>-->
+<!--    <string name="p2">PLAYER2</string>-->
+    <string name="computer">COMPUTER</string>
+    <string name="fill_your_name_here">fill your name here</string>
+    <string name="fill_your_name_here1">fill your name here</string>
+
+
+</resources>

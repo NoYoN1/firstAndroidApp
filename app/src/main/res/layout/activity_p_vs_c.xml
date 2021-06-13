@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p_vs_c">
+
+    <LinearLayout
+        android:id="@+id/flow1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#122BAA"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/flow2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/flow2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#AA1212"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flow1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerText1"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/player1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#D5D5D5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/computer"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#D5D5D5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerText1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coinsText1"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="65dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/players_coin"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#D5D5D5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerText1" />
+
+    <TextView
+        android:id="@+id/coinsText2"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="65dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/players_coin"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#D5D5D5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/flow2"
+        app:layout_constraintTop_toBottomOf="@+id/computer" />
+
+    <TextView
+        android:id="@+id/pMaiCoin"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/coin1"
+        android:textAlignment="center"
+        android:textColor="#D5D5D5"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/playerText1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comMainCoin"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/coin1"
+        android:textAlignment="center"
+        android:textColor="#D5D5D5"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@+id/computer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifPlayer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/tenor"
+        android:contentDescription="@string/img"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifComputer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/tenor"
+        android:contentDescription="@string/img"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/tenor"
+        tools:srcCompat="@drawable/tenor" />
+
+    <TextView
+        android:id="@+id/resultTotalNumber"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textColor="#D5D5D5"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow2"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="81dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/resultText"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTotalNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/playerCatchCoin"
+        android:layout_width="130dp"
+        android:layout_height="172dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/Player1CatchCoin"
+        android:textAlignment="center"
+        android:textColor="#152780"
+        android:textSize="130sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/gifPlayer"
+        app:layout_constraintEnd_toEndOf="@+id/gifPlayer"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/gifPlayer"
+        app:layout_constraintTop_toTopOf="@+id/gifPlayer" />
+
+    <TextView
+        android:id="@+id/ComputerCatchCoin"
+        android:layout_width="130dp"
+        android:layout_height="172dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/Player1CatchCoin"
+        android:textAlignment="center"
+        android:textColor="#9C1C1C"
+        android:textSize="130sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/gifComputer"
+        app:layout_constraintEnd_toEndOf="@+id/gifComputer"
+        app:layout_constraintStart_toStartOf="@+id/gifComputer"
+        app:layout_constraintTop_toTopOf="@+id/gifComputer" />
+
+
+    <TextView
+        android:id="@+id/totalHereText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/totalText"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pTotalNumber" />
+
+    <TextView
+        android:id="@+id/pTotalNumber"
+        android:layout_width="45dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/totalNumber"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="56sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifPlayer"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/comTotalNumber"
+        android:layout_width="45dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/totalNumber"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="56sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/next"
+        app:layout_constraintTop_toBottomOf="@+id/gifComputer"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+    <TextView
+        android:id="@+id/hideTotal"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/hideAnswer"
+        android:textAlignment="center"
+        android:textColor="#888686"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+
+    <ImageView
+        android:id="@+id/helpIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/help_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow1"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/setting_icon"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow2"
+        app:srcCompat="@drawable/settings" />
+
+    <LinearLayout
+        android:id="@+id/panelPlayer1"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:background="#2196F3"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/PChoice1"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="94dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/coinChoice1"
+            android:textAlignment="center"
+            android:textColor="#D5D5D5"
+            android:textSize="45sp"
+            />
+
+        <TextView
+            android:id="@+id/PChoice2"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="94dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/coinChoice2"
+            android:textAlignment="center"
+            android:textColor="#D5D5D5"
+            android:textSize="45sp"
+             />
+
+        <TextView
+            android:id="@+id/PChoice3"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="94dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/coinChoice3"
+            android:textAlignment="center"
+            android:textColor="#D5D5D5"
+            android:textSize="45sp"
+         />
+
+        <TextView
+            android:id="@+id/PChoice4"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="94dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/coinChoice4"
+            android:textAlignment="center"
+            android:textColor="#D5D5D5"
+            android:textSize="45sp"
+        />
+
+        <TextView
+            android:id="@+id/PChoice5"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="94dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/coinChoice5"
+            android:textAlignment="center"
+            android:textColor="#D5D5D5"
+            android:textSize="45sp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="#514F4F"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/panelPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTotalNumber" />
+
+    <TextView
+        android:id="@+id/showResult"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/showResult"
+        android:textAlignment="center"
+        android:textColor="#D81919"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/panelPlayer1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="460dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/change_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/advent_pro_medium"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/player_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/advent_pro_medium"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:layout_marginStart="40dp"
+        android:hint="@string/fill_your_name_here"
+        android:text="@string/player1"
+
+        android:textColorHint="@color/cray_incorrect"
+        android:autofillHints="" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/player_2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/advent_pro_medium"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:layout_marginStart="40dp"
+        android:hint="@string/fill_your_name_here"
+        android:text="@string/player2"
+
+        android:textColorHint="@color/cray_incorrect"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/homeButton"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/ok"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/resetButton"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/reset"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="18sp" />
+
+
+
+
+</LinearLayout>
